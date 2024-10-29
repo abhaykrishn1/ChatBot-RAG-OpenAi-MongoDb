@@ -1,0 +1,29 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore logs
+logs/embedding.log
+logs/search.log
+logs/summery.log
+
+
+# Ignore environment files
+.venv
+
+# Ignore configuration files with sensitive data
+config/config.py
+
+# Ignore any local settings
+**/local_settings.py
+
+# Ignore virtual environment
+venv/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

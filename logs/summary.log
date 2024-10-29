@@ -1,0 +1,14 @@
+2024-10-18 18:23:38,568 INFO Generated summary for query: which car has white colour?
+2024-10-18 18:36:32,324 INFO Generated summary for query: which car has white colour?
+2024-10-18 18:40:52,933 INFO Generated summary for query: which car has white colour?
+2024-10-18 18:41:57,780 INFO Generated summary for query: which car has white colour?
+2024-10-18 18:42:35,762 INFO Generated summary for query: which car has white colour?
+2024-10-18 18:43:05,762 INFO Generated summary for query: which car has white colour?
+2024-10-21 10:11:21,619 INFO Generated summary for query: which car has white colour?
+2024-10-29 16:12:51,789 ERROR Error with OpenAI API request: 404 Client Error: Not Found for url: https://test-rag-abhay.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-08-01-preview
+2024-10-29 16:16:12,262 ERROR Error with OpenAI API request: 401 Client Error: PermissionDenied for url: https://test-rag-abhay.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-08-01-preview
+2024-10-29 18:09:35,785 INFO Generated summary for query: list name of cars?
+2024-10-29 18:13:28,124 INFO Generated summary for query: what car models are available in white?
+2024-10-29 18:18:03,215 INFO Generated summary for query: what car models are available in black
+2024-10-29 18:20:01,551 INFO Generated summary for query: what car models are available in green
+2024-10-29 18:20:26,229 INFO Generated summary for query: what car available in black
