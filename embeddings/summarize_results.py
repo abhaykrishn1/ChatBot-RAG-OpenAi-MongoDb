@@ -18,8 +18,8 @@ def summarize_results(query, search_results):
 
     # Prepare the messages for the GPT model
     messages = [
-        {"role": "system", "content": "You are a helpful assistant that summarizes search results and provides relevant answers."},
-        {"role": "user", "content": f"Please summarize the following search results and provide a answer to the query. If the search results don't contain relevant information, please state that.\n\n{content_to_summarize}"}
+        {"role": "system", "content": "You are a helpful assistant that summarizes search results and provides relevant and concise answers."},
+        {"role": "user", "content": f"Please summarize the following search results and provide a concise answer to the query. If the search results don't contain relevant information, please state that.\n\n{content_to_summarize}"}
     ]
 
     # Make the API call to OpenAI

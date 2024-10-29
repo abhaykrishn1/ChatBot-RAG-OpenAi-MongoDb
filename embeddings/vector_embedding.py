@@ -2,10 +2,10 @@ import requests
 import time
 from pymongo import UpdateOne
 from database.mongodb_connection import MongoDBConnection
-from config.config import OPENAI_RESOURCE_NAME, OPENAI_EMBEDDING_DEPLOYMENT_NAME, OPENAI_EMBEDDING_API_KEY, OPENAI_EMBEDDING_API_VERSION, BATCH_SIZE
+from config.config import OPENAI_EMBEDDING_RESOURCE_NAME, OPENAI_EMBEDDING_DEPLOYMENT_NAME, OPENAI_EMBEDDING_API_KEY, OPENAI_EMBEDDING_API_VERSION, BATCH_SIZE
 from utils.logger import embedding_logger
 
-openai_url = f"https://{OPENAI_RESOURCE_NAME}.openai.azure.com/openai/deployments/{OPENAI_EMBEDDING_DEPLOYMENT_NAME}/embeddings?api-version={OPENAI_EMBEDDING_API_VERSION}"
+openai_url = f"https://{OPENAI_EMBEDDING_RESOURCE_NAME}.openai.azure.com/openai/deployments/{OPENAI_EMBEDDING_DEPLOYMENT_NAME}/embeddings?api-version={OPENAI_EMBEDDING_API_VERSION}"
 
 headers = {
     "Content-Type": "application/json",
