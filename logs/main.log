@@ -221,3 +221,36 @@ Therefore, there are several cars available in black that you could choose from.
 
 Concise answer: The color options available for the Audi A6 vary depending on the year and model, but commonly include white, red, blue, silver, and black.
 2024-10-29 18:58:05,042 INFO Application finished
+2024-10-30 17:03:54,306 INFO Starting the application
+2024-10-30 17:04:17,053 INFO Starting the application
+2024-10-30 17:28:00,321 INFO Starting the application
+2024-10-30 17:28:24,058 INFO Performing test search with query: what are the cars available in white 
+2024-10-30 17:28:25,144 INFO Found 10 results for test query
+2024-10-30 17:28:25,157 INFO Summarizing search results
+2024-10-30 17:28:26,729 INFO Summary: The search results suggest that there are several car models available in white, including the 2020 Hyundai Elantra, 2020 Honda Civic, 2019 Hyundai Elantra, 2018 Audi A6, 2020 Nissan Versa SV, 2023 Nissan Versa SV, 2020 Chevrolet Malibu, 2022 Chevrolet Malibu, and 2021 Ford Explorer.
+2024-10-30 17:28:26,739 INFO Application finished
+2024-10-30 21:03:05,756 INFO Starting the application
+2024-10-30 21:03:05,756 INFO Generating embeddings for all documents
+2024-10-30 21:04:14,023 INFO Performing test search with query: what clours of car models are most available in sample
+2024-10-30 21:04:14,344 INFO Found 10 results for test query
+2024-10-30 21:04:14,417 INFO Summarizing search results
+2024-10-30 21:04:15,572 INFO Summary: Based on the search results, it is unclear which colors of car models are most available in the sample as there is no clear pattern among the results. However, it seems that blue is a popular color as there are multiple queries about cars being available in that color.
+2024-10-30 21:04:15,584 INFO Application finished
+2024-10-30 21:07:17,235 INFO Starting the application
+2024-10-30 21:07:45,058 INFO Performing test search with query: what 2021 car available in red
+2024-10-30 21:07:45,689 INFO Found 10 results for test query
+2024-10-30 21:07:45,699 INFO Summarizing search results
+2024-10-30 21:07:47,025 INFO Summary: - The 2021 Toyota Camry is available in red.
+- The 2021 Audi A6 is available in red.
+- The 2022 Ford Explorer is available in red.
+- It is unclear from the search results if the 2020 Honda Civic, 2020 Audi A6, 2017 Honda Civic, 2021 Honda Civic, 2017 Toyota Camry, 2016 Hyundai Elantra, or 2019 BMW 3 Series are available in red.
+2024-10-30 21:07:47,040 INFO Application finished
+2024-10-30 21:08:14,476 INFO Starting the application
+2024-10-30 21:08:34,076 INFO Performing test search with query: is bmw available in black
+2024-10-30 21:08:34,754 INFO Found 10 results for test query
+2024-10-30 21:08:34,769 INFO Summarizing search results
+2024-10-30 21:08:36,287 INFO Summary: - The search results show different BMW models in various colors.
+- There are multiple BMW 3 Series available in black (2016, 2017, and 2020).
+- There are also other color options available for different BMW 3 Series models from different years.
+- Unfortunately, the search results do not provide a single concise answer to the query.
+2024-10-30 21:08:36,298 INFO Application finished

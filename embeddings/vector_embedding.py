@@ -42,11 +42,22 @@ def process_batch(batch, document_ids):
 
 def generate_embeddings():
     mongo_conn = MongoDBConnection.get_instance()
-    documents = mongo_conn.collection.find({})
+    # documents = mongo_conn.collection.find({})            #currently finds all the docs to send to make embeddings
+    documents = mongo_conn.collection.find({
+        "embedded_msg_preview": {"$exists": False},
+        "content_preview": {"$exists": True}  # Ensure content_preview exists
+    })
+    
 
     batch = []
     document_ids = []
+    total_documents = mongo_conn.collection.count_documents({
+        "embedded_msg_preview": {"$exists": False},
+        "content_preview": {"$exists": True}
+    })
+    embedding_logger.info(f"Found {total_documents} documents without embeddings.")
 
+    processed_count = 0
     for document in documents:
         content_preview = document.get('content_preview')
         document_id = document.get('_id')
@@ -54,16 +65,17 @@ def generate_embeddings():
         if content_preview:
             batch.append(content_preview)
             document_ids.append(document_id)
+            processed_count += 1
 
         if len(batch) == BATCH_SIZE:
-            embedding_logger.info(f"Processing batch of size {len(batch)}...")
+            embedding_logger.info(f"Processing batch of size {len(batch)}... ({processed_count}/{total_documents})")
             process_batch(batch, document_ids)
             batch = []
             document_ids = []
             time.sleep(1)  # Rate limiting
 
     if batch:
-        embedding_logger.info(f"Processing final batch of size {len(batch)}...")
+        embedding_logger.info(f"Processing final batch of size {len(batch)}... ({processed_count}/{total_documents})")
         process_batch(batch, document_ids)
 
     embedding_logger.info("Finished generating embeddings for all documents.")

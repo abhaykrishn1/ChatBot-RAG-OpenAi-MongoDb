@@ -1,4 +1,4 @@
-# from embeddings.vector_embedding import generate_embeddings
+from embeddings.vector_embedding import generate_embeddings
 from embeddings.vector_search import search, print_results
 from embeddings.summarize_results import process_and_summarize
 from utils.logger import main_logger
