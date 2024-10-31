@@ -7,14 +7,14 @@ from database.mongodb_connection import MongoDBConnection
 def main():
     main_logger.info("Starting the application")
 
-    # Generate embeddings for all documents
+    # Generate embeddings for documents in mongoDb
     # Uncomment to generate embeddings
     # main_logger.info("Generating embeddings for all documents")
     # generate_embeddings()
 
     # Perform a test search
     # user_query = "what car models are available in white?"
-    user_query = input("please ask a question ...  ")
+    user_query = input("please ask a question ...   \n")
     main_logger.info(f"Performing test search with query: {user_query}")
     results = search(user_query)
 
